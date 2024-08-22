@@ -22,13 +22,9 @@ p {
     margin-bottom: 3rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     font-family: 'Montserrat', sans-serif;
+    user-select: none;
 }
 
 body {
@@ -418,7 +414,7 @@ textarea {
         position: fixed;
         right: 2rem;
         top: 2rem;
-        z-index: 2;
+        z-index: 5;
         background: var(--main-color);
         color: white;
         font-size: 3rem;
@@ -433,6 +429,9 @@ textarea {
     .close-menu:checked~.menu {
         display: block;
         z-index: 4;
+    }
+    .close-menu:checked~.menu-close-label:after {
+        content: 'X';
     }
 
     .menu-spacing {
