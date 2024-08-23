@@ -2,4 +2,4 @@ This is content from a **Udemy's HTML course**. This site isn't the "final produ
 
 Isso é conteúdo de um **curso de HTML da Udemy**. Esse site não é o "produto final". Estou aceitando sugestões para otimizar o código. Pretendo terminar o projeto dentro de alguns dias.
 
-[Site](https://joao1771.github.io/course-landingpage/)
+[Meu Site](https://joao1771.github.io/course-landingpage/)

@@ -15,19 +15,21 @@
 </head>
 
 <body>
-    <input type="checkbox" class="close-menu" aria-label="Close menu" role="button" id="Close menu">
-    <label class="close-menu-label" for="Close menu" title="close menu"></label>
+    <input type="checkbox" class="close-menu" aria-label="Close menu" role="button" id="close-menu">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
             <nav class="menu-content">
-                <h1><a href="#intro">LOGO</a></h1>
-                <ul>
+                <h1  onclick="getElementById('close-menu').checked = false">
+                    <a href="#intro">LOGO</a>
+                </h1>
+                <ul onclick="getElementById('close-menu').checked = false">
                     <li><a href="#top3">Intro</a></li>
                     <li><a href="#grid-one">Top 3</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#grid-two">Work</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#footer">Footer</a></li>
                 </ul>
             </nav>
         </div>
@@ -50,7 +52,7 @@
     </section>
     <section id="top3" class="section white-bg">
         <div class="main-content top3-content">
-            <h2>top 3 jobs</h2>
+            <h2>news coverage and some surprises</h2>
             <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and
                 some surprises at the machine's
                 performance. This post details some background information on the experience of porting Firefox to run
@@ -119,24 +121,24 @@
     </section>
     <section id="grid-two" class="section grid-one main-bg">
         <div class="grid-one-content main-content">
-            <h2 class="grid-main-head">Recommended</h2>
+            <h2 class="grid-main-head">my grid</h2>
             <p class="grid-description">Uma breve descrição</p>
             <div class="grid">
                 <article>
-                    <h3>First</h3>
+                    <h3>Teste 1</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quis veritatis nam praesentium
                         accusamus repudiandae expedita, repellat officiis, tenetur nihil quisquam. Quasi laudantium,
                         veritatis
                         alias eos repellat iusto accusantium excepturi.</p>
                 </article>
                 <article>
-                    <h3>Second</h3>
+                    <h3>Teste 2</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit veritatis excepturi,
                         incidunt perferendis amet fuga dignissimos, iste tempore qui, repudiandae nihil? Magni
                         eaque perferendis officiis inventore eos? Ipsum, adipisci vel.</p>
                 </article>
                 <article>
-                    <h3>Third</h3>
+                    <h3>Teste 3</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt maxime quos incidunt
                         ipsum architecto totam a voluptas optio eaque adipisci saepe mollitia exercitationem,
                         laborum eum eius dicta sint vero rem.</p>
@@ -161,26 +163,36 @@
                         <th></th>
                         <th>Used PS5</th>
                         <th>New PS5</th>
+                        <th>Stolen PS5</th>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Shoppe's</td>
                             <td>R$1585,99</td>
                             <td>Not exist</td>
+                            <td>R$1585,99</td>
                         </tr>
                         <tr>
                             <td>Mercado Livre's</td>
                             <td>R$2549,99</td>
                             <td>R$6000,00</td>
+                            <td>R$1349,99</td>
+                        </tr>
+                        <tr>
+                            <td>Camelô</td>
+                            <td>R$1799,90</td>
+                            <td>Not exist</td>
+                            <td>R$578,00</td>
                         </tr>
                         <tr>
                             <td>Official Stores</td>
                             <td>Not exist</td>
                             <td>R$4184,91</td>
+                            <td>Not exist</td>
                         </tr>
                     </tbody>
                     <tfoot>
-                        <td colspan="3">Not all products are guaranteed (nem todos são garantidos).</td>
+                        <td colspan="4">Not all products are guaranteed (nem todos são garantidos).</td>
                     </tfoot>
                 </table>
             </div>
@@ -223,7 +235,7 @@
     <footer id="footer" class="footer white-bg">
         <p><a rel="nofollow" href="#">Feito com <a style="color:crimson;cursor:default">&hearts;</a> por JF.ltda</a></p><br>
     </footer>
-    <a href="#intro" class="back-top">△</a>
+    <a href="#intro" class="back-top" title="Back to top">△</a>
 </body>
 
 </html>

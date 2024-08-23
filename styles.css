@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 html {
@@ -20,6 +21,7 @@ html {
 p {
     font-size: 2rem;
     margin-bottom: 3rem;
+    user-select: none;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -341,6 +343,7 @@ textarea {
 .footer {
     text-align: center;
     font-size: 2rem;
+    height: 100%;
 }
 
 .footer p {
@@ -357,13 +360,13 @@ textarea {
     right: 2rem;
     font-size: 3rem;
     background: white;
-    padding: 1rem;
+    padding: 3px 10px 10px 10px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem;
-    border: solid 0.1rem gray;
+    height: 45px;
+    border: solid 1px gray;
 }
 
 @media (max-width:800px) {
@@ -396,6 +399,7 @@ textarea {
     .menu-content ul {
         flex-direction: column;
         justify-content: center;
+        gap: 30px;
     }
 
     .menu-content {
@@ -410,7 +414,7 @@ textarea {
     }
 
     .close-menu-label::after {
-        content: '⇋';
+        content: '≡';
         position: fixed;
         right: 2rem;
         top: 2rem;
@@ -428,10 +432,9 @@ textarea {
 
     .close-menu:checked~.menu {
         display: block;
-        z-index: 4;
     }
-    .close-menu:checked~.menu-close-label:after {
-        content: 'X';
+    .close-menu:checked~.close-menu-label::after {
+        content: '✕';
     }
 
     .menu-spacing {
